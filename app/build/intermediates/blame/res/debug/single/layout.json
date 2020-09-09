@@ -1,0 +1,26 @@
+[
+    {
+        "merged": "C:\\Users\\gianfranco\\Documents\\Projetos\\RickAndMortyApi\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_character_detail.xml",
+        "source": "C:\\Users\\gianfranco\\Documents\\Projetos\\RickAndMortyApi\\app\\src\\main\\res\\layout\\fragment_character_detail.xml"
+    },
+    {
+        "merged": "C:\\Users\\gianfranco\\Documents\\Projetos\\RickAndMortyApi\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_main.xml",
+        "source": "C:\\Users\\gianfranco\\Documents\\Projetos\\RickAndMortyApi\\app\\src\\main\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\gianfranco\\Documents\\Projetos\\RickAndMortyApi\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\view_state.xml",
+        "source": "C:\\Users\\gianfranco\\Documents\\Projetos\\RickAndMortyApi\\app\\src\\main\\res\\layout\\view_state.xml"
+    },
+    {
+        "merged": "C:\\Users\\gianfranco\\Documents\\Projetos\\RickAndMortyApi\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\view_item_character.xml",
+        "source": "C:\\Users\\gianfranco\\Documents\\Projetos\\RickAndMortyApi\\app\\src\\main\\res\\layout\\view_item_character.xml"
+    },
+    {
+        "merged": "C:\\Users\\gianfranco\\Documents\\Projetos\\RickAndMortyApi\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\view_character_detail.xml",
+        "source": "C:\\Users\\gianfranco\\Documents\\Projetos\\RickAndMortyApi\\app\\src\\main\\res\\layout\\view_character_detail.xml"
+    },
+    {
+        "merged": "C:\\Users\\gianfranco\\Documents\\Projetos\\RickAndMortyApi\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_home.xml",
+        "source": "C:\\Users\\gianfranco\\Documents\\Projetos\\RickAndMortyApi\\app\\src\\main\\res\\layout\\fragment_home.xml"
+    }
+]

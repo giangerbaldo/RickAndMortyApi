@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+                                                       
+                                                   
+
+    
+
+                                           
+
+                 
+                                  
+                                                                                     
+
+           
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:tag="layout/fragment_character_detail_0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".ui.MainActivity" android:tag="binding_1">
+
+            <include
+                android:id="@+id/include_character_detail"
+                layout="@layout/view_character_detail"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                                                        
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+         

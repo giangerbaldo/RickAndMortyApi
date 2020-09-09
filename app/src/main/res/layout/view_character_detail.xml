@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="detailViewModel"
+            type="com.rickandmortyapi.ui.characterDetail.CharacterDetailViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imv_char_detail_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            app:imageUrl="@{detailViewModel.characterWithLocation.character.image}"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints"
+            tools:src="@tools:sample/backgrounds/scenic" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txv_char_detail_name_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/char_detail_name_label"
+            android:theme="@style/CharDetailLabelTextViewStyle"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imv_char_detail_image" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txv_char_detail_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="@{detailViewModel.characterWithLocation.character.name}"
+            android:theme="@style/CharDetailTextViewStyle"
+            app:layout_constraintBaseline_toBaselineOf="@+id/txv_char_detail_name_label"
+            app:layout_constraintStart_toEndOf="@+id/txv_char_detail_name_label" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txv_char_detail_species_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/char_detail_species_label"
+            android:theme="@style/CharDetailLabelTextViewStyle"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txv_char_detail_name_label" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txv_char_detail_species"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="@{detailViewModel.characterWithLocation.character.species}"
+            android:theme="@style/CharDetailTextViewStyle"
+            app:layout_constraintBaseline_toBaselineOf="@+id/txv_char_detail_species_label"
+            app:layout_constraintStart_toEndOf="@+id/txv_char_detail_species_label" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txv_char_detail_episodes_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/char_detail_episodes_number_label"
+            android:theme="@style/CharDetailLabelTextViewStyle"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txv_char_detail_species_label" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txv_char_detail_episodes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="@{Integer.toString(detailViewModel.characterWithLocation.character.totalEpisodes)}"
+            android:theme="@style/CharDetailTextViewStyle"
+            app:layout_constraintBaseline_toBaselineOf="@+id/txv_char_detail_episodes_label"
+            app:layout_constraintStart_toEndOf="@+id/txv_char_detail_episodes_label" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txv_char_detail_location_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/char_detail_location_label"
+            android:theme="@style/CharDetailLabelTextViewStyle"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txv_char_detail_episodes_label" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txv_char_detail_location_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="@{detailViewModel.characterWithLocation.locations.get(0).name}"
+            android:theme="@style/CharDetailTextViewStyle"
+            app:layout_constraintBaseline_toBaselineOf="@+id/txv_char_detail_location_label"
+            app:layout_constraintStart_toEndOf="@+id/txv_char_detail_location_label" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>
