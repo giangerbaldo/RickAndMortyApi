@@ -13,6 +13,6 @@ workflows:
        email:
          recipients:
            - giangerbaldo@gmail.com
-	notify:
-      	  success: false
-          failure: false
+         notify:
+           success: false
+           failure: false
