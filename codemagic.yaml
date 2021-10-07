@@ -7,6 +7,14 @@ workflows:
         script: chmod +x ./gradlew
       - name: Build debug apk
         script: ./gradlew assembleDebug
+    triggering:
+      events:
+        - push
+      branch_patterns: 
+        - pattern: *
+        - pattern: master
+          include: false
+      cancel_previous_builds: true
     artifacts:
       - app/build/**/outputs/**/*.apk
     publishing:
