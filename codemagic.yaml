@@ -3,6 +3,8 @@ workflows:
     name: Android Beta test release workflow
     max_build_duration: 60
     scripts:
+      - name: chmod permissions
+        script: chmod +x ./gradlew
       - name: Build debug apk
         script: ./gradlew assembleDebug
     artifacts:
