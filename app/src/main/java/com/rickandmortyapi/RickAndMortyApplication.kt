@@ -10,6 +10,7 @@ class RickAndMortyApplication : Application() {
 
     lateinit var component: AppComponent
 
+	//Teste codemagic build
     override fun onCreate() {
         super.onCreate()
         component = DaggerAppComponent.builder()
