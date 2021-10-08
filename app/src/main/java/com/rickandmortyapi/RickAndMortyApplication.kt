@@ -8,8 +8,6 @@ import com.rickandmortyapi.di.NetModule
 
 class RickAndMortyApplication : Application() {
 
-
-//teste
     lateinit var component: AppComponent
 	//teste push event master
     override fun onCreate() {

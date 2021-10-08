@@ -13,10 +13,11 @@ workflows:
         - pull_request
       branch_patterns: 
         - pattern: master
-          include: false
+          include: true
       cancel_previous_builds: true
     artifacts:
       - app/build/**/outputs/**/*.apk
+      - app/build/**/outputs/**/*.aab
     publishing:
        email:
          recipients:
