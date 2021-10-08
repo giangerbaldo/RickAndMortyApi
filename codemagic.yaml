@@ -17,6 +17,7 @@ workflows:
       cancel_previous_builds: true
     artifacts:
       - app/build/**/outputs/**/*.apk
+      - app/build/**/outputs/**/*.aab
     publishing:
        email:
          recipients:
