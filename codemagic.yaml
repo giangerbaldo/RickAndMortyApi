@@ -23,5 +23,5 @@ workflows:
          recipients:
            - giangerbaldo@gmail.com
          notify:
-           success: false
-           failure: false
+           success: true
+           failure: true
