@@ -9,7 +9,7 @@ import com.rickandmortyapi.di.NetModule
 class RickAndMortyApplication : Application() {
 
     lateinit var component: AppComponent
-
+	//teste push event
     override fun onCreate() {
         super.onCreate()
         component = DaggerAppComponent.builder()
