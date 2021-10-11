@@ -1,0 +1,8 @@
+The following version is ready to submit:
+
+Android - 2.19.1 (282)
+
+Features:
+- New strings for the video consultation in France;
+- InMail in messaging - adds indicator label in messages list and in group channel navigation bar when message is from a recruiter;
+- New connection error messages in video consultation.
